@@ -12,7 +12,6 @@ public class SceneTransfer : MonoBehaviour
     public void GoToStartMenu()
     {
         ButtonAnimator.SetTrigger("PlayExplode");
-
         UnityEngine.SceneManagement.SceneManager.LoadScene("StartMenu");
         ButtonAnimator.SetTrigger("PlayIdle");
     }
