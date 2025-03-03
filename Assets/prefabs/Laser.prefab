@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4761533890128058229, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2470575194742285649, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
       propertyPath: m_Resource
       value: 
@@ -84,9 +88,29 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 366795ce534de6c4ba179cfa4f1c0a58, type: 2}
+    - target: {fileID: 7240202275938677972, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240202275938677972, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240202275938677972, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240202275938677972, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9049733294354329296, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
       propertyPath: m_Name
       value: Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 9049733294354329296, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+      propertyPath: m_TagString
+      value: Attack
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1967642596392455505, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
