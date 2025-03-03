@@ -19,10 +19,10 @@ public class Attack_movement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Obstacle")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Player")
         {
             
-            Destroy(gameObject, 0.1f);
+            Destroy(gameObject);
 
         }
     }
