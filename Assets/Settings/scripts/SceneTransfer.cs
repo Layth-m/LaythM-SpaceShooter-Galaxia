@@ -20,7 +20,7 @@ public class SceneTransfer : MonoBehaviour
     {
 
         ButtonAnimator.SetTrigger("PlayExplode");
-        //UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
         ButtonAnimator.SetTrigger("PlayIdle");
     }
         

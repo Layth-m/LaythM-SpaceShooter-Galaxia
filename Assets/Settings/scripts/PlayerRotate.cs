@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerRotate: MonoBehaviour
 {
-    public float rotationSpeed = 300f;
+
+    // 
+    public float rotationSpeed = 900f;
 
     void Update()
     {

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Default_Flat_overhead_view_of_a_rare_luminescent_gemstone_susp_3_6eccc092-b802-4d99-b7d1-adf9616dd863_0_0: 8894961829527280081
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

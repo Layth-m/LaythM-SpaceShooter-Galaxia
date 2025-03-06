@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Starry_night_star_2560x1440_0: -3030588391417801794
+      Starry_night_star_2560x1440_1: -3337469248868520853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
