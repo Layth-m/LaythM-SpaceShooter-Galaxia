@@ -30,7 +30,7 @@ public class Enemy_Behaviour : MonoBehaviour
         }
         if (transform.position.x < -8.15f || transform.position.y < -4.4f || transform.position.y > 4.25f)
         {
-            
+
             Destroy(gameObject);
         }
 
@@ -39,5 +39,18 @@ public class Enemy_Behaviour : MonoBehaviour
     void Shoot()
     {
         Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+    }
+
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            var healthComponent = collision.gameObject.GetComponent<playerHealth>();
+            Debug.LogError("collision detacted");
+
+            healthComponent.TakeDamage(100f);
+
+        }
     }
 }
