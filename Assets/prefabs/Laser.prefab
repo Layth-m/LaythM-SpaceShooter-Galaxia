@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -4761533890128058229, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+      propertyPath: VFX_Flame
+      value: 
+      objectReference: {fileID: 6757685114697075779, guid: 24344a7c247326342b9f619f7334a037, type: 3}
+    - target: {fileID: -4761533890128058229, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -114,12 +118,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1967642596392455505, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+    - {fileID: -3343746744692009175, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9049733294354329296, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1631656340140319737}
+    - targetCorrespondingSourceObject: {fileID: 9049733294354329296, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871050722606219040}
   m_SourcePrefab: {fileID: 100100000, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
 --- !u!1 &4152936144773842691 stripped
 GameObject:
@@ -178,3 +186,20 @@ PolygonCollider2D:
       - {x: 0.089999996, y: 0}
       - {x: 0.089999996, y: 0.38}
   m_UseDelaunayMesh: 0
+--- !u!114 &1871050722606219040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4152936144773842691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd2a5050cec0fd499e6d4804eb19ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  lifetime: 0.5
+  VFX_Flame: {fileID: 6757685114697075779, guid: 24344a7c247326342b9f619f7334a037, type: 3}
+  VFX_HitEnemy: {fileID: 6577568609671923590, guid: 6399ea1b489b1ad459bf1a1d25ff6435, type: 3}
+  VFX_HitPlayer: {fileID: 4402595269323911396, guid: b3d003e9375f3ba49be72206ae2634f5, type: 3}

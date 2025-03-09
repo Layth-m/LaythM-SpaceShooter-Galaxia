@@ -5,7 +5,7 @@ public class playerHealth : MonoBehaviour
 
     public float maxHealth = 1000;
     public float currentHealth;
-
+    public GameObject VFX_Destory;
     HealthBarBehaviour healthbar;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,13 +28,21 @@ public class playerHealth : MonoBehaviour
 
         healthbar.UpdateHealthBar(currentHealth);
 
-      //  if (currentHealth <= 0)
-      //  {
-           
-            //animate
-            //destroy 
-            //gameover
+   if (currentHealth <= 0)
+        {
 
-      //  }
+
+            //destroy 
+            Instantiate(VFX_Destory, transform.position, Quaternion.identity);
+
+            Destroy(gameObject, 0.5f);
+
+        }
+    }
+
+    public void HealDamage(float amount)
+    {
+        currentHealth = currentHealth + amount;
+        healthbar.UpdateHealthBar(currentHealth);
     }
 }

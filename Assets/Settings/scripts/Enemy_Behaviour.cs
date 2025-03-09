@@ -8,6 +8,13 @@ public class Enemy_Behaviour : MonoBehaviour
     public Transform bulletSpawnPoint;
 
     private float shootingTimer;
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
 
     void Update()
     {

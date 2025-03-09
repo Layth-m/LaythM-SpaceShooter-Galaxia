@@ -9,8 +9,8 @@ public class HealthBarBehaviour : MonoBehaviour
     void Start()
     {
         slider = GetComponentInChildren<Slider>();
-        slider.minValue = 0; // Set minimum value
-        slider.maxValue = 1000; // Set maximum values
+       // slider.minValue = 0; // Set minimum value
+      //  slider.maxValue = 1000; // Set maximum values
     }
     public void Update()
     {

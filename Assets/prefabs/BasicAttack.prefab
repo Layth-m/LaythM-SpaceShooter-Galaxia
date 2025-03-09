@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5430755368724982249}
   - component: {fileID: 3629498639464530807}
   - component: {fileID: -1967642596392455505}
-  - component: {fileID: -4761533890128058229}
   - component: {fileID: 7240202275938677972}
   - component: {fileID: -2470575194742285649}
+  - component: {fileID: -3343746744692009175}
   m_Layer: 3
   m_Name: BasicAttack
   m_TagString: Attack
@@ -150,20 +150,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.045}
   m_Radius: 0.045
---- !u!114 &-4761533890128058229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9049733294354329296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd2a5050cec0fd499e6d4804eb19ade, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  lifetime: 2
 --- !u!50 &7240202275938677972
 Rigidbody2D:
   serializedVersion: 5
@@ -288,3 +274,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3343746744692009175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049733294354329296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bbb0995434ff284b9fff9cd9fc27ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  lifetime: 0.5
+  VFX_Flame: {fileID: 6757685114697075779, guid: 24344a7c247326342b9f619f7334a037, type: 3}
+  VFX_HitEnemy: {fileID: 6577568609671923590, guid: 6399ea1b489b1ad459bf1a1d25ff6435, type: 3}
+  VFX_HitPlayer: {fileID: 4402595269323911396, guid: b3d003e9375f3ba49be72206ae2634f5, type: 3}
