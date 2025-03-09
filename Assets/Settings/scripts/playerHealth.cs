@@ -36,6 +36,7 @@ public class playerHealth : MonoBehaviour
             Instantiate(VFX_Destory, transform.position, Quaternion.identity);
 
             Destroy(gameObject, 0.5f);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
 
         }
     }
