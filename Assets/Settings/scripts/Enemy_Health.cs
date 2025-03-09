@@ -54,16 +54,14 @@ public class Enemy_Health : MonoBehaviour
     private IEnumerator WaitForAnimationAndTransition()
     {
 
-        // Disable other scripts or components
-       // GetComponent<Collider>().enabled = false; // Disable collider
-       // GetComponent<Enemy_Behaviour>().enabled = false; // Disable movement script
+      
 
         // Trigger the destruction animation
        
             animator.SetTrigger("Destruction");
 
 
-        // Wait for the specified delay (or use animation length)
+       
         float destructionDelay = 0.4f;
         yield return new WaitForSeconds(destructionDelay);
 
