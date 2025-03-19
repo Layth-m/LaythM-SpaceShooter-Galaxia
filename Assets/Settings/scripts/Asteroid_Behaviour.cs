@@ -1,12 +1,22 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+
+
 
 public class Asteroid_Behaviour : MonoBehaviour
 {
     float speed = 3f;
     private Animator animator;
-   
+    private Player_Controller playerController; 
+    
     private void Start()
     {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            playerController = player.GetComponent<Player_Controller>();
+        }
+
         animator = GetComponent<Animator>();
     }
     private void Update()
@@ -20,7 +30,10 @@ public class Asteroid_Behaviour : MonoBehaviour
        
         if (collision.gameObject.tag == "Attack" || collision.gameObject.tag == "Player")
         {
+
+        
             animator.SetTrigger("Explode");
+            playerController.AddScore(500);
             Destroy(gameObject, 0.5f);
             
         }

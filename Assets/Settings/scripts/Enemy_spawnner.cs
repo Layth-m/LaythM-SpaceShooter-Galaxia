@@ -18,7 +18,6 @@ public class Enemy_Spawner : MonoBehaviour
     void Start()
     {
         
-
         nextSpawnTime = Time.time + Random.Range(minSpawnInterval, maxSpawnInterval);
     }
 

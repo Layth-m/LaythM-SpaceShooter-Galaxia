@@ -9,12 +9,18 @@ public class Enemy_Health : MonoBehaviour
     public GameObject Player;
     HealthBarBehaviour healthbar;
     private Animator animator;
-   
-    
+
+    private Player_Controller playerController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            playerController = player.GetComponent<Player_Controller>();
+        }
+
         currentHealth = maxHealth;
         healthbar = GetComponentInChildren<HealthBarBehaviour>();
         healthbar.UpdateHealthBar(currentHealth);
@@ -54,11 +60,11 @@ public class Enemy_Health : MonoBehaviour
     private IEnumerator WaitForAnimationAndTransition()
     {
 
-      
 
+        playerController.AddScore(2000);
         // Trigger the destruction animation
-       
-            animator.SetTrigger("Destruction");
+
+        animator.SetTrigger("Destruction");
 
 
        
