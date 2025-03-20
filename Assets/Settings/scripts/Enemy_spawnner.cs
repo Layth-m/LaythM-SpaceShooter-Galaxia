@@ -3,7 +3,7 @@ using UnityEngine;
 public class Enemy_Spawner : MonoBehaviour
 {
     public GameObject enemy;
-    public float minSpawnInterval = 5f; 
+    public float minSpawnInterval = 7f; 
     public float maxSpawnInterval = 10f; 
 
     public float spawnAreaMinY = -4.06f; 
@@ -35,7 +35,7 @@ public class Enemy_Spawner : MonoBehaviour
     void SpawnEnemyBatch()
     {
        
-        int batchSize = Random.Range(1, 6); 
+        int batchSize = Random.Range(1, 4); 
 
         for (int i = 0; i < batchSize; i++)
         {

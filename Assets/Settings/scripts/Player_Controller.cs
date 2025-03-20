@@ -53,4 +53,10 @@ public class Player_Controller : MonoBehaviour
         score += points;
         setScoreText(); 
     }
+
+
+    public int GetScore()
+    {
+        return score;
+    }
 }
