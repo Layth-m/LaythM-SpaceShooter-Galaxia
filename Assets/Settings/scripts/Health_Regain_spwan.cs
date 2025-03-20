@@ -1,31 +1,29 @@
-
-
-
 using UnityEngine;
 
-public class Asteroid_Spawn : MonoBehaviour
+public class Health_Regain_spwan : MonoBehaviour
 {
-    public GameObject asteroid; 
-    public GameObject player;
-    public float minSpawnInterval = 1f; 
-    public float maxSpawnInterval = 3f; 
- 
+
+    public GameObject health_icon;
+
+    public float minSpawnInterval = 2f;
+    public float maxSpawnInterval = 8f;
+
 
     private float nextSpawnTime;
 
     void Start()
     {
-        
+
         nextSpawnTime = Time.time + Random.Range(minSpawnInterval, maxSpawnInterval);
     }
 
     void Update()
     {
-       
+
         if (Time.time >= nextSpawnTime)
         {
-            SpawnAsteroid();
-          
+            SpawnHealth_Icon();
+
             nextSpawnTime = Time.time + Random.Range(minSpawnInterval, maxSpawnInterval);
         }
 
@@ -36,16 +34,17 @@ public class Asteroid_Spawn : MonoBehaviour
         }
     }
 
-    void SpawnAsteroid()
+    void SpawnHealth_Icon()
     {
-      
+
         Vector3 spawnPosition = new Vector3(
-            Random.Range( 4f , 6f),
-            Random.Range( -3.5f, 3.5f),
+            Random.Range(-3f, 6f),
+            Random.Range(-3.5f, 3.5f),
             0f
         );
 
-       
-        Instantiate(asteroid, spawnPosition, Quaternion.identity);
+
+        Instantiate(health_icon, spawnPosition, Quaternion.identity);
     }
+   
 }
