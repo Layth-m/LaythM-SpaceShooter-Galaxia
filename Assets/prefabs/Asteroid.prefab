@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 00203bc9d4587034f9de5eb6819638f7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 00203bc9d4587034f9de5eb6819638f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6

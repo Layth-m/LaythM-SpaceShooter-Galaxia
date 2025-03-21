@@ -40,8 +40,8 @@ public class Asteroid_Spawn : MonoBehaviour
     {
       
         Vector3 spawnPosition = new Vector3(
-            Random.Range( 4f , 6f),
-            Random.Range( -3.5f, 3.5f),
+            Random.Range( 1f , 6f),
+            Random.Range( -3.5f, 3f),
             0f
         );
 
