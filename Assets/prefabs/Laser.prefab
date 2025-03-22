@@ -150,7 +150,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -198,8 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd2a5050cec0fd499e6d4804eb19ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  lifetime: 0.5
   VFX_Flame: {fileID: 6757685114697075779, guid: 24344a7c247326342b9f619f7334a037, type: 3}
   VFX_HitEnemy: {fileID: 6577568609671923590, guid: 6399ea1b489b1ad459bf1a1d25ff6435, type: 3}
   VFX_HitPlayer: {fileID: 4402595269323911396, guid: b3d003e9375f3ba49be72206ae2634f5, type: 3}

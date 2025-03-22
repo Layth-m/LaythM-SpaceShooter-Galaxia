@@ -23,6 +23,11 @@ public class Asteroid_Behaviour : MonoBehaviour
     {
         
         transform.Translate(Vector2.left * speed * Time.deltaTime);
+        if (transform.position.x < -9.15f || transform.position.y < -5.4f || transform.position.y > 7.25f)
+        {
+
+            Destroy(gameObject);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

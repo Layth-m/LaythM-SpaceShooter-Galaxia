@@ -8,10 +8,17 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetKey(KeyCode.E))
+        {
+            Shoot();
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
         }
+
     }
 
     void Shoot()

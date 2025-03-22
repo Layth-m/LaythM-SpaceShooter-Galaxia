@@ -5,7 +5,7 @@ public class Health_Regain_spwan : MonoBehaviour
 
     public GameObject health_icon;
 
-    public float minSpawnInterval = 2f;
+    public float minSpawnInterval = 4f;
     public float maxSpawnInterval = 8f;
 
 

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Enemy_Spawner : MonoBehaviour
 {
+    public GameObject[] enemyVariants; 
     public GameObject enemy;
     public float minSpawnInterval = 7f; 
     public float maxSpawnInterval = 10f; 
@@ -48,7 +49,20 @@ public class Enemy_Spawner : MonoBehaviour
         Vector3 spawnPosition = GetValidSpawnPosition();
 
         Quaternion spawnRotation = Quaternion.Euler(0f, 0f, 90f);
-        Instantiate(enemy, spawnPosition, spawnRotation);
+        //Instantiate(enemy, spawnPosition, spawnRotation);
+
+        if (enemyVariants.Length > 0)
+        {
+            int randomIndex = Random.Range(0, enemyVariants.Length); 
+            GameObject selectedEnemy = enemyVariants[randomIndex]; 
+
+            // Instantiate the selected enemy variant
+            Instantiate(selectedEnemy, spawnPosition, spawnRotation);
+        }
+        else
+        {
+            Debug.LogWarning("No enemy variants assigned in the array!");
+        }
     }
 
     Vector3 GetValidSpawnPosition()
