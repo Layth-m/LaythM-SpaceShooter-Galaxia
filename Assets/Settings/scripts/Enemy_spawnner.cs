@@ -36,7 +36,7 @@ public class Enemy_Spawner : MonoBehaviour
     void SpawnEnemyBatch()
     {
        
-        int batchSize = Random.Range(1, 4); 
+        int batchSize = Random.Range(2, 5); 
 
         for (int i = 0; i < batchSize; i++)
         {

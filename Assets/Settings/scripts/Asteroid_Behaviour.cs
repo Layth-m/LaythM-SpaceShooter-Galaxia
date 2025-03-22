@@ -31,9 +31,15 @@ public class Asteroid_Behaviour : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
-       
-        if (collision.gameObject.tag == "Attack" || collision.gameObject.tag == "Player")
+       if( collision.gameObject.tag == "Attack")
+        {
+            animator.SetTrigger("Explode");
+            playerController.AddScore(500);
+            Destroy(gameObject, 0.5f);
+        }
+
+
+        if ( collision.gameObject.tag == "Player")
         {
             var healthComponent = collision.gameObject.GetComponent<playerHealth>();
             Debug.LogError("collision detacted");

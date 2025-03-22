@@ -456,7 +456,7 @@ MonoBehaviour:
   speed: 1.5
   shootingInterval: 0.2
   bulletPrefab: {fileID: 9049733294354329296, guid: d27bf3c1792d1b846b07cb5e273e9835, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 7825828665868270680, guid: d1cc97237a53bc84c846d94f052945ea, type: 3}
   bulletSpawnPoint: {fileID: 5133792296655986094}
 --- !u!60 &2762524867919461057
 PolygonCollider2D:
